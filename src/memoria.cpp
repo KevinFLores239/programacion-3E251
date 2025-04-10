@@ -21,5 +21,5 @@ int * direccion = &a;
 cout<<"Direccion a: "<<direccion<<endl;
 cout<<*direccion<<endl;//imprime el valor a donde a punta 
 cout<<&direccion<<endl;//imprime direccion del puntero 
-cout<<sizeof(direccion)<<endl;//el peso 
+cout<<sizeof(direccion)<<endl;//el peso
 }
