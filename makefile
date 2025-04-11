@@ -31,9 +31,16 @@ ejecutar : $(TYPE)
 	./$<
 
 
-archivo: bin/archivo
-	./$<
+
 bin/archivo: src/archivo.cpp
 	c++ $< -o $@ -I$(INCLUDE)
 
+archivo: bin/archivo
+	./$<
 
+
+bin/binario: src/binario.cpp
+	c++ $< -o $@ -I$(INCLUDE)
+
+binario: bin/binario
+	./$<
